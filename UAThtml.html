@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Josh Warden -->
+    <!-- Comment -->
+    <script src ="code.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Comment -->
+    <title>UAT Space Program</title>
+    <link rel = "stylesheet" href = "clock.css">
+</head>
+<body style="background-color: blue;">
+    
+
+    <!-- Comment -->
+<img src="uat space logo.jpg" alt="space logo">
+<h1 style="color:aliceblue;">UAT Space Program</h1>
+<!-- Comment -->
+<script>document.write("Test of document write function")</script>
+<!-- Comment -->
+    <p>Test of the paragraph tags</p>
+  <!-- Comment -->  
+   <script>alert("Get Ready!");</script> 
+
+ <!-- Comment -->  
+ 
+ 
+  <p> Time for Blast off! <span id="countdowntimer">10 </span> Seconds</p>
+<!--Comment-->
+<script type="text/javascript">
+    var currTme = 10;
+    var blastOff = setInterval(function(){
+    currTme--;
+    document.getElementById("countdowntimer").textContent = currTme;
+   
+    if(currTme <= 0)
+        clearInterval(blastOff)
+      
+      if(currTme <= 5){
+     alert("Warning less then 1/2 way to launch, time left = 5s")
+    }  
+      
+      
+      },1000);
+
+    
+</script>
+
+
+<body onload="startTime()">
+<div id="txt"></div>
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+</body>
+</html>
+
+
+</body>
+
+
+</html>
