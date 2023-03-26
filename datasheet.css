@@ -4,10 +4,14 @@ width: 500px;
 
 th {
     text-align: left;
+    color: aliceblue;
 }
 
 table, th, td {
-  border: 1px solid black;
+  border: 1px solid rgb(243, 238, 238);
+}
+td {
+  color: aliceblue;
 }
 
 img{
@@ -27,7 +31,7 @@ img{
 .b1{
   background-color: aqua;
   border: 1px;
-  color: aliceblue;
+  color: rgb(7, 8, 9);
   width: 100px;
   font-weight: 200px;
   border-radius: 10px;
@@ -36,7 +40,7 @@ img{
 .b2{
   background-color: aqua;
   border: 1px;
-  color: aliceblue;
+  color: rgb(6, 6, 7);
   width: 100px;
   font-weight: 200px;
   border-radius: 10px;
